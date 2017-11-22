@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum numbers</title>
+	<script type="text/javascript">
+		// Declaration phase
+		var num, sum, size = 3;
+		// Initialization phase
+		sum = 0;
+		
+		// Proccessing phase
+		for (var i = 0; i < size; i++) {
+			num = window.prompt("Enter a number: ");
+			while (isNaN(num)) {
+				window.prompt("It's not a number.")
+				num = window.prompt("Enter a number: ");
+			}
+			sum += parseInt(num);
+		}
+		// Output
+		window.alert("Sum of your numbers is " + sum);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
